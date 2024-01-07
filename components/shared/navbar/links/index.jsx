@@ -1,7 +1,8 @@
 import React from "react";
-import { navLinks } from "./_nav";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import { navLinks } from "./_nav";
+
+import NavigationButton from "@/components/shared/navigation-button";
 
 const Links = () => {
   return (
@@ -9,14 +10,14 @@ const Links = () => {
       <div className="flex space-x-5">
         {navLinks.map(({ label, path }) => {
           return (
-            <Link className="font-semibold" key={label} href={path}>
+            <Link className="hover:text-primary font-semibold" key={label} href={path}>
               {label}
             </Link>
           );
         })}
       </div>
 
-      <Button variant="outline">Let&apos;s connect</Button>
+      <NavigationButton link="contact-us" variant="outline">Let&apos;s connect</NavigationButton>
     </>
   );
 };
