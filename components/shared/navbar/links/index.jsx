@@ -1,22 +1,37 @@
 import React from "react";
-import { navLinks } from "./_nav";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import { navLinks } from "./_nav";
 
-const Links = () => {
+import NavigationButton from "@/components/shared/navigation-button";
+
+const Links = ({ isColumn = false, Wrapper }) => {
+  const WrapperComponent = ({ children }) => {
+    return Wrapper ? <Wrapper asChild>{children}</Wrapper> : children;
+  };
+
   return (
     <>
-      <div className="flex space-x-5">
+      <div className={`flex gap-5 ${isColumn ? "flex-col" : ""}`}>
         {navLinks.map(({ label, path }) => {
           return (
-            <Link className="font-semibold" key={label} href={path}>
-              {label}
-            </Link>
+            <WrapperComponent key={label}>
+              <Link className="hover:text-primary font-semibold" href={path}>
+                {label}
+              </Link>
+            </WrapperComponent>
           );
         })}
       </div>
 
-      <Button variant="outline">Let&apos;s connect</Button>
+      <WrapperComponent>
+        <NavigationButton
+          className={isColumn ? "mt-8" : ""}
+          link="contact-us"
+          variant="outline"
+        >
+          Let&apos;s connect
+        </NavigationButton>
+      </WrapperComponent>
     </>
   );
 };
