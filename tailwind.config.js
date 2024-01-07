@@ -24,12 +24,12 @@ module.exports = {
         background: "#000010",
         foreground: "#fff",
         primary: {
-          DEFAULT: "#e00feb",
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: "#d500ff",
+          foreground: "#fff",
         },
         secondary: {
           DEFAULT: "#000010",
-          foreground: "hsl(var(--secondary-foreground))",
+          foreground: "#fff",
         },
       },
       borderRadius: {
