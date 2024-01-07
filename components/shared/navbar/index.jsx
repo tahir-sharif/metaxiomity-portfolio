@@ -8,7 +8,7 @@ import Links from "./links";
 const Navbar = () => {
   return (
     <>
-      <div className="h-20 fixed w-full bg-primary/80 backdrop-blur-md max-xl:px-5">
+      <div className="h-20 fixed w-full bg-secondary/80 backdrop-blur-md max-xl:px-5">
         <div className="flex items-center justify-between m-auto max-w-screen-xl">
           <Link href="/">
             <UIImage className="w-44" imageSrc={Images.logo} />
