@@ -1,9 +1,17 @@
-import { HomeSection } from "@/components/sections/index";
+import {
+  HeroSection,
+  AboutUs,
+  Services,
+  Acheivements,
+} from "@/components/sections/index";
 
 export default function Home() {
   return (
     <>
-      <HomeSection />
+      <HeroSection />
+      <AboutUs />
+      <Services />
+      <Acheivements />
     </>
   );
 }

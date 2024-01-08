@@ -5,7 +5,7 @@ import { Images } from "@/assets";
 import NavigationButton from "@/components/shared/navigation-button";
 import { companyDetails } from "@/portfolio-config";
 
-const HomeSection = () => {
+const HeroSection = () => {
   return (
     <section id="home">
       <div
@@ -18,7 +18,7 @@ const HomeSection = () => {
           <h1 className="text-5xl max-md:text-3xl">
             {companyDetails.desciption}
           </h1>
-          <p className="max-w-[60rem] font-light text-xl max-md:text-lg line">
+          <p className="max-w-[60rem] font-light text-xl  max-md:text-sm line">
             At Mataxiomity Solutions, we pave the way for transformative
             technology solutions. From blockchain integration to seamless app
             development, we redefine possibilities. Join us in shaping the
@@ -38,4 +38,4 @@ const HomeSection = () => {
   );
 };
 
-export default HomeSection;
+export default HeroSection;
