@@ -3,6 +3,7 @@ import {
   AboutUs,
   Services,
   Acheivements,
+  TestimonialsSection,
 } from "@/components/sections/index";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <AboutUs />
       <Services />
       <Acheivements />
+      <TestimonialsSection />
     </>
   );
 }
