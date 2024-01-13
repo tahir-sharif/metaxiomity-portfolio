@@ -2,7 +2,7 @@ import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 import { Images } from "@/assets";
-import NavigationButton from "@/components/shared/navigation-button";
+import ContactUsButton from "@/components/shared/navigation-button";
 import { companyDetails } from "@/portfolio-config";
 
 const HeroSection = () => {
@@ -25,13 +25,13 @@ const HeroSection = () => {
             future with cutting-edge expertise and unparalleled innovation.
           </p>
 
-          <NavigationButton
+          <ContactUsButton
             link="/contact-us"
             className="mt-3"
             variant="outline"
           >
             Discover More <FaArrowRightLong className="ml-2" />
-          </NavigationButton>
+          </ContactUsButton>
         </div>
       </div>
     </section>

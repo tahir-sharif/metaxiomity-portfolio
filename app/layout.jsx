@@ -1,7 +1,8 @@
 import { Poppins } from "next/font/google";
 
-import Navbar from "@/components/shared/navbar";
 import { companyDetails } from "@/portfolio-config";
+import Navbar from "@/components/shared/navbar";
+import Footer from "@/components/shared/footer";
 import "@/app/globals.css";
 
 const inter = Poppins({
@@ -10,19 +11,19 @@ const inter = Poppins({
 });
 
 export const metadata = {
-  title: companyDetails.name,
+  title: `${companyDetails.name} - Transforming Digital Experiences`,
   description: companyDetails.desciption,
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <link rel="icon" href="/favicon.png" sizes="any" />
-
       <body className={inter.className}>
         <Navbar />
 
         {children}
+
+        <Footer />
       </body>
     </html>
   );
