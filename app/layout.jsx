@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import { companyDetails } from "@/portfolio-config";
 import Navbar from "@/components/shared/navbar";
 import Footer from "@/components/shared/footer";
+import { Images } from "@/assets/index";
 import "@/app/globals.css";
 
 const inter = Poppins({
@@ -11,8 +12,18 @@ const inter = Poppins({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://metaxiomity-portfolio.vercel.app"),
   title: `${companyDetails.name} - Transforming Digital Experiences`,
   description: companyDetails.desciption,
+  openGraph: {
+    images: [
+      {
+        url: Images.logo.src.src,
+        width: 411,
+        height: 168,
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {
