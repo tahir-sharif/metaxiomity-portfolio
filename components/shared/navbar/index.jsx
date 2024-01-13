@@ -1,22 +1,23 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Link from "next/link";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 import { Images } from "@/assets/index";
 import UIImage from "@/components/image";
-import { Button } from "@/components/ui/button";
 import Links from "./links";
 import {
   Sheet,
   SheetClose,
   SheetContent,
-  SheetDescription,
   SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 
 const Navbar = () => {
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  const toggleDrawer = () => setDrawerOpen((d) => !d);
+
   return (
     <>
       <div className="h-20 fixed w-full bg-secondary/50 backdrop-blur-md max-xl:px-5 z-50">
@@ -29,7 +30,7 @@ const Navbar = () => {
             <Links />
           </div>
 
-          <Sheet>
+          <Sheet open={drawerOpen} onOpenChange={toggleDrawer}>
             <div className="hidden max-md:block cursor-pointer">
               <SheetTrigger>
                 <RxHamburgerMenu size="2rem" />
@@ -37,12 +38,8 @@ const Navbar = () => {
             </div>
 
             <SheetContent>
-              <SheetHeader>
-                {/* <SheetTitle>Are you absolutely sure?</SheetTitle> */}
-              </SheetHeader>
-
               <div className="mt-10 flex flex-col items-center">
-                <Links isColumn Wrapper={SheetClose} />
+                <Links isColumn toggleDrawer={toggleDrawer} />
               </div>
             </SheetContent>
           </Sheet>

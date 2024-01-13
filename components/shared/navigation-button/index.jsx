@@ -2,15 +2,18 @@
 import React from "react";
 
 import { Button } from "@/components/ui/button";
-import { getScrollElementIntoViewFn } from "@/lib/utils";
+import { scrollElementIntoView } from "@/lib/utils";
 
-const NavigationButton = ({ link = "", ...props }) => {
+const ContactUsButton = ({ link = "", onButtonClick, ...props }) => {
   return (
     <Button
-      onClick={getScrollElementIntoViewFn("#contact-us")}
+      onClick={() => {
+        scrollElementIntoView("#contact-us");
+        if (onButtonClick) onButtonClick();
+      }}
       {...props}
     ></Button>
   );
 };
 
-export default NavigationButton;
+export default ContactUsButton;

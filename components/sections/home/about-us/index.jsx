@@ -1,5 +1,5 @@
 import React from "react";
-import NavigationButton from "@/components/shared/navigation-button";
+import ContactUsButton from "@/components/shared/navigation-button";
 
 const AboutUs = () => {
   return (
@@ -22,7 +22,7 @@ const AboutUs = () => {
           </p>
         </div>
         <div className="max-md:pt-5 w-full md:w-3/12 flex md:justify-center items-center">
-          <NavigationButton link="contact-us">Learn More</NavigationButton>
+          <ContactUsButton link="contact-us">Learn More</ContactUsButton>
         </div>
       </div>
     </section>
