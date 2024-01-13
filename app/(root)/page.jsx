@@ -1,3 +1,4 @@
+import ContactUsSection from "@/components/sections/home/contact-us";
 import {
   HeroSection,
   AboutUs,
@@ -14,6 +15,7 @@ export default function Home() {
       <Services />
       <Acheivements />
       <TestimonialsSection />
+      <ContactUsSection />
     </>
   );
 }

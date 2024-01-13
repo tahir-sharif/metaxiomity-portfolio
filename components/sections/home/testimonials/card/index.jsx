@@ -1,4 +1,6 @@
 import React from "react";
+import { IoPersonCircleOutline } from "react-icons/io5";
+
 import {
   Card,
   CardDescription,
@@ -13,7 +15,7 @@ const TestimonialCard = ({ name = "", ordered = "", message = "" }) => {
         <CardHeader>
           <div className="flex flex-col">
             <div className="flex items-center gap-3">
-              <div className="p-4 border rounded-full">{"icon"}</div>
+              <IoPersonCircleOutline size="3rem" />
 
               <CardTitle className="font-bold text-primary">{name}</CardTitle>
             </div>

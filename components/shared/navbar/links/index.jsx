@@ -1,8 +1,10 @@
+"use client";
 import React from "react";
 import Link from "next/link";
-import { navLinks } from "./_nav";
 
+import { getScrollElementIntoViewFn } from "@/lib/utils";
 import NavigationButton from "@/components/shared/navigation-button";
+import { navLinks } from "./_nav";
 
 const Links = ({ isColumn = false, Wrapper }) => {
   const WrapperComponent = ({ children }) => {
@@ -15,7 +17,11 @@ const Links = ({ isColumn = false, Wrapper }) => {
         {navLinks.map(({ label, path }) => {
           return (
             <WrapperComponent key={label}>
-              <Link className="hover:text-primary font-semibold" href={path}>
+              <Link
+                onClick={getScrollElementIntoViewFn(path)}
+                className="hover:text-primary font-semibold"
+                href={path}
+              >
                 {label}
               </Link>
             </WrapperComponent>

@@ -19,7 +19,7 @@ import {
 const Navbar = () => {
   return (
     <>
-      <div className="h-20 fixed w-full bg-secondary/50 backdrop-blur-md max-xl:px-5">
+      <div className="h-20 fixed w-full bg-secondary/50 backdrop-blur-md max-xl:px-5 z-50">
         <div className="flex items-center justify-between m-auto max-w-screen-xl">
           <Link href="/">
             <UIImage className="w-44" imageSrc={Images.logo} />
