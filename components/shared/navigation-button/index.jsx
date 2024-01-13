@@ -1,17 +1,19 @@
-"use client"
+"use client";
 import React from "react";
-import { useRouter } from "next/navigation";
 
 import { Button } from "@/components/ui/button";
+import { scrollElementIntoView } from "@/lib/utils";
 
-const NavigationButton = ({ link = "", ...props }) => {
-  const router = useRouter();
-
-  const navigationHandler = () => {
-    router.push(link);
-  };
-
-  return <Button onClick={navigationHandler} {...props}></Button>;
+const ContactUsButton = ({ link = "", onButtonClick, ...props }) => {
+  return (
+    <Button
+      onClick={() => {
+        scrollElementIntoView("#contact-us");
+        if (onButtonClick) onButtonClick();
+      }}
+      {...props}
+    ></Button>
+  );
 };
 
-export default NavigationButton;
+export default ContactUsButton;

@@ -20,7 +20,7 @@ const Services = () => {
             return (
               <Card key={name}>
                 <CardHeader>
-                  <div className="flex gap-4 items-center">
+                  <div className="flex gap-4 items-center mb-3">
                     {icon}
                     <CardTitle className="text-lg">{name}</CardTitle>
                   </div>

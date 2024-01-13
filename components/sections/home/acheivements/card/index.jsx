@@ -16,7 +16,7 @@ const AcheivementsCard = ({ icon, heading, title }) => {
             <div className="flex gap-4 items-center">
               <CardTitle className="text-primary">{heading}</CardTitle>
             </div>
-            <CardDescription>{title}</CardDescription>
+            <CardDescription className="pt-2">{title}</CardDescription>
           </div>
         </div>
       </CardHeader>

@@ -8,38 +8,38 @@ import { TiGroupOutline } from "react-icons/ti";
 export const servicesItems = [
   {
     icon: <FaWrench size="1.5rem" />,
-    name: "Customized Solutions",
+    name: "Web Development",
     description:
-      "Tailored digital solutions designed to meet your unique business needs and goals.",
+      "Crafting impactful web solutions that elevate your brand. From design to deployment, we create scalable, user-centric websites that drive growth and engagement for your business.",
   },
   {
-    icon: <GrTechnology size="1.5rem" />,
-    name: "Expertise in Technology",
+    icon: <FaWrench size="1.5rem" />,
+    name: "Mobile App Development",
     description:
-      "Proficiency in React, Node Express, and Blockchain to drive innovation and digital advancement.",
+      "Building dynamic and intuitive mobile applications that resonate with your audience. Our expertise in app development ensures seamless experiences, from ideation to launch, enhancing your digital footprint and user engagement.",
+  },
+  {
+    icon: <FaWrench size="1.5rem" />,
+    name: "Blockchain Solutions",
+    description:
+      "Harnessing the power of Blockchain for secure, efficient, and innovative solutions. From concept to implementation, we craft tailored solutions that redefine possibilities for your business.",
+  },
+  {
+    icon: <FaWrench size="1.5rem" />,
+    name: "UI/UX Design",
+    description:
+      "Molding user-centric experiences that captivate and delight. Our UI/UX design expertise crafts intuitive and visually compelling interfaces that elevate user engagement and satisfaction.",
+  },
+  {
+    icon: <FaWrench size="1.5rem" />,
+    name: "Cloud Solutions Architect",
+    description:
+      "Harnessing the power of AWS for scalable, secure, and innovative cloud solutions. From architecture design to implementation, we optimize AWS services to fuel your business growth and efficiency.",
   },
   {
     icon: <CgSupport size="1.5rem" />,
     name: "End-to-End Support",
     description:
-      "Comprehensive support throughout the project lifecycle, ensuring success and satisfaction.",
-  },
-  {
-    icon: <TiWorld size="1.5rem" />,
-    name: "Global Reach",
-    description:
-      "Extensive experience serving diverse industries and sectors worldwide, delivering impactful solutions.",
-  },
-  {
-    icon: <FaRegLightbulb size="1.5rem" />,
-    name: "Cutting-Edge Innovation",
-    description:
-      "Constantly pushing boundaries to deliver future-forward solutions that redefine industry standards.",
-  },
-  {
-    icon: <TiGroupOutline size="1.5rem" />,
-    name: "Collaborative Partnerships",
-    description:
-      "A commitment to fostering collaborative partnerships, ensuring transparency and shared success.",
+      "Offering end-to-end support across all phases of your project. From inception to deployment, our dedicated team ensures seamless execution and support, guaranteeing success at every step.",
   },
 ];
