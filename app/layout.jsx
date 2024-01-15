@@ -14,7 +14,8 @@ const inter = Poppins({
 export const metadata = {
   metadataBase: new URL("https://metaxiomity-portfolio.vercel.app"),
   title: `${companyDetails.name} - Transforming Digital Experiences`,
-  description: companyDetails.desciption,
+  description:
+    "Discover a world of innovation with our cutting-edge solutions. Empowering tomorrow's breakthroughs today through advanced technologies and unparalleled expertise. Explore how we drive innovation forward for a brighter future.",
   openGraph: {
     images: [
       {
